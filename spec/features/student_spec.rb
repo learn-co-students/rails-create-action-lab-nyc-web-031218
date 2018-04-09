@@ -28,9 +28,7 @@ describe 'form page' do
 
     fill_in 'first_name', with: "Margaery"
     fill_in 'last_name', with: "Tyrell"
-
     click_on "Submit Student"
-
     expect(page).to have_content("Margaery")
   end
 
